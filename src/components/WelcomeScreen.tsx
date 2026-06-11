@@ -12,7 +12,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
     <div className="card" style={{ textAlign: "center", position: "relative" }}>
       {/* Decorative Floating SVGs */}
       <div style={{ display: "flex", justifyContent: "center", gap: "16px", marginBottom: "20px" }}>
-        <div style={{ animation: "float-slow 4s ease-in-out infinite", color: "var(--color-red)" }}>
+        <div style={{ animation: "float-slow 4s ease-in-out infinite", color: "var(--color-yellow)" }}>
           <Flame size={48} fill="currentColor" />
         </div>
         <div 
@@ -22,24 +22,24 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
             lineHeight: 1 
           }}
         >
-          🍟
+          🍸
         </div>
       </div>
 
       <div className="badge badge-spice" style={{ marginBottom: "16px" }}>
-        <Sparkles size={14} /> Specially for Sanika Thote
+        <Sparkles size={14} /> Specially for Nupur 🌀
       </div>
 
       <h1 style={{ fontSize: "2.4rem", marginBottom: "12px", lineHeight: "1.2" }}>
-        Sanika's <span style={{ color: "var(--color-orange)", textShadow: "0 0 15px rgba(255,107,0,0.4)" }}>Foodie Adventure</span> Challenge
+        Nupur's <span style={{ color: "var(--color-orange)", textShadow: "0 0 15px rgba(16,185,129,0.4)" }}>Chill & Grind</span> Challenge
       </h1>
       
       <p style={{ color: "var(--color-text-muted)", fontSize: "1.05rem", marginBottom: "32px" }}>
-        Hey Sanika! Welcome to your personal foodie quest. Prove your elite taste buds by answering questions about your favorite and newly tried dishes, spin the wheel of destiny for tonight's dinner, and unlock a treat promise for Vinit! 🍕🧁
+        Hey Nupur! Welcome to your high-vibe lounge. Prove your elite survival skills by passing the workaholic & chill trivia, spin the wheel of beverages to secure tonight's hydration, and unlock a treat contract for Vinit! 🍸💼☕
       </p>
 
       <button className="btn btn-primary" onClick={onStart}>
-        Start Foodie Quest! <Flame size={18} fill="currentColor" />
+        Enter the Lounge 🌀
       </button>
 
       {/* Decorative details inside the card */}
@@ -53,7 +53,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
           pointerEvents: "none" 
         }}
       >
-        🍟
+        ☕
       </div>
     </div>
   );

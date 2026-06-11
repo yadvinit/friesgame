@@ -13,10 +13,7 @@ interface SummaryCardProps {
 export default function SummaryCard({ dinnerOption, vinitTreat, onRestart }: SummaryCardProps) {
   const [copied, setCopied] = useState(false);
 
-  const cleanDinner = dinnerOption.replace(/^[^\w]*/, "").trim(); // Remove leading emojis for plain text
-  const cleanTreat = vinitTreat.replace(/^[^\w]*/, "").trim();
-
-  const shareText = `🌶️ *Peri Peri Fries Challenge Completed!* 🍟\n\n👤 *Candidate:* Sanika Thote\n👑 *Status:* Certified Spice Queen\n🍽️ *Dinner Tonight:* ${dinnerOption}\n🎁 *Tomorrow's Treat for Vinit:* ${vinitTreat}\n\n_Agreement locked! No backing out now!_ 🔐`;
+  const shareText = `🌀 *Nupur's High-Vibe Chill & Grind Challenge Completed!* 💼\n\n👤 *Candidate:* Nupur\n👑 *Status:* Certified Workaholic & High-Vibe Queen\n🥤 *Beverage Won:* ${dinnerOption}\n☕ *Tomorrow's Treat for Vinit:* ${vinitTreat}\n\n_Contract locked! Plain water duty awaits Nupur!_ 💧🔐`;
 
   const handleCopy = async () => {
     try {
@@ -54,25 +51,25 @@ export default function SummaryCard({ dinnerOption, vinitTreat, onRestart }: Sum
     <div className="card" style={{ textAlign: "center", position: "relative" }}>
       <div style={{ display: "flex", justifyContent: "center", gap: "8px", marginBottom: "16px" }}>
         <div className="badge badge-spice">
-          <Sparkles size={14} /> Certified Foodie
+          <Sparkles size={14} /> High-Vibe Queen
         </div>
       </div>
 
-      <h2 style={{ fontSize: "2rem", marginBottom: "8px", color: "var(--color-yellow)" }}>
-        Challenge Cleared! 🎉
+      <h2 style={{ fontSize: "2rem", marginBottom: "8px", color: "var(--color-orange)" }}>
+        Lounge Challenge Clear! 🍸
       </h2>
       <p style={{ color: "var(--color-text-muted)", fontSize: "0.95rem", marginBottom: "24px" }}>
-        Sanika Thote has successfully completed the Peri Peri challenge. The agreement is official!
+        Nupur has officially sealed the high-vibe chill and grind contract. No backing out!
       </p>
 
       {/* Stylized Receipt */}
       <div className="receipt">
         <div style={{ textAlign: "center", marginBottom: "16px" }}>
           <h3 style={{ fontSize: "1.1rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color-orange)" }}>
-            SPICE CONTRACT RECEIPT
+            HIGH-VIBE CONTRACT RECEIPT
           </h3>
           <span style={{ fontSize: "0.75rem", color: "var(--color-text-muted)" }}>
-            DATE: {new Date().toLocaleDateString("en-IN")} | ID: #PERI-{(Math.random() * 10000).toFixed(0)}
+            DATE: {new Date().toLocaleDateString("en-IN")} | ID: #BAR-{(Math.random() * 10000).toFixed(0)}
           </span>
         </div>
 
@@ -80,18 +77,18 @@ export default function SummaryCard({ dinnerOption, vinitTreat, onRestart }: Sum
 
         <div className="receipt-row">
           <span className="receipt-label">Candidate:</span>
-          <span className="receipt-value" style={{ color: "var(--color-yellow)" }}>Sanika Thote</span>
+          <span className="receipt-value" style={{ color: "var(--color-orange)" }}>Nupur</span>
         </div>
         
         <div className="receipt-row">
-          <span className="receipt-label">Spice Status:</span>
-          <span className="receipt-value" style={{ color: "#2ecc71" }}>Extra Hot (100% Correct)</span>
+          <span className="receipt-label">Lounge Status:</span>
+          <span className="receipt-value" style={{ color: "var(--color-orange)" }}>Hydrated (100% Legit)</span>
         </div>
 
         <div className="receipt-divider"></div>
 
         <div className="receipt-row" style={{ flexDirection: "column", gap: "4px" }}>
-          <span className="receipt-label">Dinner Selected:</span>
+          <span className="receipt-label">Beverage Won:</span>
           <span className="receipt-value" style={{ fontSize: "1.05rem", color: "#ffffff" }}>
             {dinnerOption}
           </span>
@@ -109,7 +106,7 @@ export default function SummaryCard({ dinnerOption, vinitTreat, onRestart }: Sum
         <div className="receipt-divider" style={{ borderStyle: "dashed" }}></div>
 
         <p style={{ fontSize: "0.8rem", color: "var(--color-text-muted)", textAlign: "center", fontStyle: "italic" }}>
-          "By clicking below, Sanika agrees to carry out the specified dinner and deliver the promised treat tomorrow."
+          "By clicking below, Nupur agrees to remain sober with plain water tonight and deliver a delicious cold coffee to Vinit tomorrow."
         </p>
       </div>
 
@@ -132,7 +129,7 @@ export default function SummaryCard({ dinnerOption, vinitTreat, onRestart }: Sum
           </button>
           
           <button className="btn btn-secondary" style={{ flex: 1 }} onClick={onRestart}>
-            Play Again <RotateCcw size={18} />
+            Play Again 🌀
           </button>
         </div>
       </div>
@@ -149,7 +146,7 @@ export default function SummaryCard({ dinnerOption, vinitTreat, onRestart }: Sum
           transform: "rotate(-15deg)"
         }}
       >
-        🌶️
+        🍸
       </div>
     </div>
   );

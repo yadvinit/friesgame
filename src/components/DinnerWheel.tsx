@@ -9,14 +9,14 @@ interface DinnerWheelProps {
 }
 
 const DINNER_OPTIONS = [
-  "🍗 Butter Chicken & Butter Naan",
-  "🥩 Mutton Seekh Kebab Platter",
-  "🍔 Crispy Chicken Burger",
-  "🍛 Tandoori Chicken Tikka",
-  "🍤 Spicy Chili Garlic Prawns",
-  "🍲 Goan Fish Curry & Rice",
-  "🍗 Hot Crispy Chicken Wings",
-  "🍽️ Absolutely Nothing! (Khaali Thali)"
+  "🍸 Neon Margarita (Tequila Rush)",
+  "🍺 Cold Craft Beer Pint",
+  "🍹 Spicy Chili Martini",
+  "🥃 Double Whiskey Sour",
+  "🧉 Trippy Absinthe Shot",
+  "🍹 Long Island Iced Tea",
+  "☕ Espresso Martini (Work Fuel)",
+  "💧 Plain Water (Khaali Glass)"
 ];
 
 const COLORS = [
@@ -160,12 +160,12 @@ export default function DinnerWheel({ onComplete }: DinnerWheelProps) {
   return (
     <div className="card" style={{ textAlign: "center" }}>
       <div className="badge badge-yellow" style={{ marginBottom: "16px" }}>
-        <Sparkles size={14} /> The Non-Veg Feast Destiny
+        <Sparkles size={14} /> The High-Vibe Bar Destiny
       </div>
 
-      <h2 style={{ fontSize: "1.8rem", marginBottom: "12px" }}>Spin for Dinner!</h2>
+      <h2 style={{ fontSize: "1.8rem", marginBottom: "12px" }}>Spin for Tonight's Drink!</h2>
       <p style={{ color: "var(--color-text-muted)", fontSize: "0.95rem", marginBottom: "28px" }}>
-        Spin the wheel of delicious non-veg options to determine your dinner tonight! 🍖
+        Spin the wheel of high-vibe beverages to determine your drink tonight! 🍸
       </p>
 
       <div className="wheel-outer">
@@ -191,43 +191,43 @@ export default function DinnerWheel({ onComplete }: DinnerWheelProps) {
 
       {result && (
         <div style={{ marginTop: "20px" }}>
-          <div 
-            style={{ 
-              padding: "16px", 
-              background: "rgba(226, 88, 62, 0.1)", 
-              borderRadius: "16px", 
-              border: "1px solid rgba(226, 88, 62, 0.3)", 
-              marginBottom: "20px" 
-            }}
-          >
-            <div style={{ color: "var(--color-red)", display: "flex", justifyContent: "center", marginBottom: "8px" }}>
-              <AlertTriangle size={32} />
-            </div>
-            <p style={{ fontSize: "1.1rem", fontWeight: "800", color: "#ffffff", margin: "4px 0" }}>
-               Laded on: {result}
-            </p>
-            <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", margin: "8px 0" }}>
-              Whaaat?! The wheel of destiny has spoken! You got absolutely NOTHING for dinner! 😭 Better share Vinit's cold coffee!
-            </p>
-            
-            <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
-              <button 
-                className="btn btn-secondary" 
-                style={{ flex: 1 }} 
-                onClick={() => { setHasSpun(false); setResult(null); }}
-              >
-                Spin Again 🌀
-              </button>
+            <div 
+              style={{ 
+                padding: "16px", 
+                background: "rgba(16, 185, 129, 0.1)", 
+                borderRadius: "16px", 
+                border: "1px solid rgba(16, 185, 129, 0.3)", 
+                marginBottom: "20px" 
+              }}
+            >
+              <div style={{ color: "var(--color-orange)", display: "flex", justifyContent: "center", marginBottom: "8px" }}>
+                <AlertTriangle size={32} />
+              </div>
+              <p style={{ fontSize: "1.1rem", fontWeight: "800", color: "#ffffff", margin: "4px 0" }}>
+                 Landed on: {result}
+              </p>
+              <p style={{ fontSize: "0.9rem", color: "var(--color-text-muted)", margin: "8px 0" }}>
+                Whaaat?! The high-vibe wheel has spoken! You got PLAIN WATER tonight! 😭 Looks like the bartender cut you off! No toxins for you, back to the corporate grind!
+              </p>
               
-              <button 
-                className="btn btn-primary" 
-                style={{ flex: 1 }} 
-                onClick={() => onComplete(result)}
-              >
-                Accept Destiny 🤐
-              </button>
+              <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
+                <button 
+                  className="btn btn-secondary" 
+                  style={{ flex: 1 }} 
+                  onClick={() => { setHasSpun(false); setResult(null); }}
+                >
+                  Spin Again 🌀
+                </button>
+                
+                <button 
+                  className="btn btn-primary" 
+                  style={{ flex: 1 }} 
+                  onClick={() => onComplete(result)}
+                >
+                  Accept Destiny 💼
+                </button>
+              </div>
             </div>
-          </div>
         </div>
       )}
     </div>

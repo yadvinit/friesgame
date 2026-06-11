@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sanika's Foodie Challenge | Fav & New Dishes 🍕",
-  description: "Answer the trivia about Sanika's favorite/new dishes, spin the dinner wheel, and promise Vinit a treat!",
+  title: "Nupur's High-Vibe Chill & Grind Challenge 🍸🌀",
+  description: "Can you pass Nupur's workaholic & chill trivia, survive the drinks wheel, and promise Vinit coffee?",
 };
 
 export default function RootLayout({

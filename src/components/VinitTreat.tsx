@@ -39,10 +39,10 @@ export default function VinitTreat({ onComplete }: VinitTreatProps) {
         </div>
 
         <h2 style={{ fontSize: "1.8rem", marginBottom: "12px", lineHeight: "1.2" }}>
-          A Quick Question for Sanika... 😉
+          A Quick Question for Nupur... 😉
         </h2>
         <p style={{ color: "var(--color-text-muted)", fontSize: "0.95rem", marginBottom: "16px" }}>
-          Since you completed the foodie trivia, are you bringing a delicious treat for Vinit tomorrow to brighten his day?
+          Since you completed the trivia, are you bringing a delicious cold coffee for Vinit tomorrow to brighten his work day?
         </p>
       </div>
 

@@ -3,18 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
 
 :root {
-  --color-red: #e2583e;
-  --color-red-hover: #ff6d54;
-  --color-orange: #fbb03b;
-  --color-yellow: #ffc72c;
-  --color-yellow-pale: #fff3c4;
-  --color-bg: #150d0a;
-  --color-bg-light: #211410;
-  --color-card: rgba(33, 20, 16, 0.85);
-  --color-border: rgba(226, 88, 62, 0.25);
-  --color-border-glow: rgba(226, 88, 62, 0.6);
-  --color-text: #fffdfc;
-  --color-text-muted: #d9c5bf;
+  --color-red: #ef4444;
+  --color-red-hover: #f87171;
+  --color-orange: #10b981;
+  --color-yellow: #8b5cf6;
+  --color-yellow-pale: #ddd6fe;
+  --color-bg: #08070b;
+  --color-bg-light: #120f1a;
+  --color-card: rgba(18, 15, 26, 0.85);
+  --color-border: rgba(139, 92, 246, 0.25);
+  --color-border-glow: rgba(139, 92, 246, 0.6);
+  --color-text: #fcfaff;
+  --color-text-muted: #cbbccf;
   
   --font-title: 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;

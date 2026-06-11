@@ -14,51 +14,51 @@ interface Question {
 const QUIZ_QUESTIONS: Question[] = [
   {
     id: 1,
-    text: "What is Sanika's absolute favorite dessert when she wants something sweet?",
+    text: "What is Nupur's ultimate fuel to survive a 12-hour work marathon?",
     options: [
-      "Plain bread toast",
-      "Sizzling Brownie with Vanilla Ice Cream! 🍨🍫",
-      "Fruit salad without dressing",
-      "An oatmeal cookie"
+      "A cup of hot warm water",
+      "Double-shot espresso injected straight into the veins! ☕🔥",
+      "Taking a 2-hour afternoon nap",
+      "Eating a sugar-free oat bar"
     ],
     correctAnswerIndex: 1,
-    explanation: "Correct! Nothing beats the hot, sizzling brownie paired with freezing cold vanilla ice cream!"
+    explanation: "Correct! Caffeine is the lifeblood of Nupur's legendary work marathons!"
   },
   {
     id: 2,
-    text: "Which newly tried dish has Sanika been super excited to cook or eat recently?",
+    text: "After a long corporate grind, how does Nupur choose to 'decompress' and get high-vibe?",
     options: [
-      "Creamy Homemade White Sauce Pasta! 🍝",
-      "Boiled eggs with salt",
-      "Bitter gourd soup",
-      "Plain white rice"
+      "Updating spreadsheets for fun",
+      "Sipping a gorgeous, neon-lit cocktail and listening to deep house! 🍸🌀",
+      "Reading corporate policy handbooks",
+      "Going to bed at 9:00 PM sharp"
     ],
-    correctAnswerIndex: 0,
-    explanation: "Indeed! Freshly made creamy white sauce pasta is a absolute masterpiece!"
+    correctAnswerIndex: 1,
+    explanation: "Exactly! Good beats, glowing neon lights, and a cool cocktail are the ultimate way to unwind!"
   },
   {
     id: 3,
-    text: "What is Sanika's ultimate go-to comfort street food or snack for a perfect cheat day?",
+    text: "What is the secret ingredient that makes a chili cocktail taste absolutely mind-bending?",
     options: [
-      "Plain salted crackers",
-      "Boiled broccoli florets",
-      "Crispy Loaded Cheese Fries! 🍟🧀",
-      "Steamed brown rice cakes"
+      "A splash of white vinegar",
+      "A pinch of fiery ghost pepper syrup and a sugar rim! 🌶️🍹",
+      "Just basic ice cubes",
+      "A celery stalk stir"
     ],
-    correctAnswerIndex: 2,
-    explanation: "Correct! Crispy, hot fries loaded with gooey melted cheese make for the best comfort snack!"
+    correctAnswerIndex: 1,
+    explanation: "Perfect! A sweet and spicy kick takes the cocktail experience to a whole new dimension!"
   },
   {
     id: 4,
-    text: "What is the perfect beverage she loves to pair with a delicious dinner?",
+    text: "If Nupur gets a Slack notification at 11:00 PM on a Friday while holding a drink, what happens?",
     options: [
-      "Thick Creamy Iced Latte / Cold Coffee! ☕✨",
-      "Warm tap water",
-      "Unsweetened green tea",
-      "Strong black coffee"
+      "She shuts down her laptop, ignores it, and takes a shot! 🥂✨",
+      "She starts writing code immediately",
+      "She schedules a client meeting for Saturday morning",
+      "She sends an email apologizing for the delay"
     ],
     correctAnswerIndex: 0,
-    explanation: "Perfect! A sweet, chilled iced latte is the ultimate companion to balance any delicious meal!"
+    explanation: "Spot on! Respect the weekend, shut the laptop, and toast to freedom! 🥂"
   }
 ];
 
@@ -112,12 +112,12 @@ export default function FoodieQuiz({ onComplete }: FoodieQuizProps) {
         <div style={{ color: "var(--color-red)", fontSize: "4rem", marginBottom: "16px" }}>
           <XCircle size={64} style={{ margin: "0 auto" }} />
         </div>
-        <h2 style={{ fontSize: "1.8rem", marginBottom: "12px" }}>Taste Buds Confused! 🥵</h2>
+        <h2 style={{ fontSize: "1.8rem", marginBottom: "12px" }}>Brain Overheated! 🥵</h2>
         <p style={{ color: "var(--color-text-muted)", marginBottom: "32px" }}>
-          Oh no, Sanika! You got a question wrong. Real foodies know their favorite dishes inside out! Let's try again!
+          Oh no, Nupur! You got a question wrong. Real workaholics know their coffee and cocktails inside out! Let's reboot and try again!
         </p>
         <button className="btn btn-primary" onClick={handleReset}>
-          Try Again <RotateCcw size={18} />
+          Reboot System <RotateCcw size={18} />
         </button>
       </div>
     );
